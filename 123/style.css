@@ -1,0 +1,108 @@
+/* basic style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0; /* Add margin reset */
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ff4532;
+    font-size: 50px;
+}
+
+section {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+p {
+    /* Remove 'position: relative;' */
+    clear: both; /* Use 'both' to clear both left and right floats */
+}
+
+div {
+    position: relative;
+    background-color: gray;
+    border: 3.5px solid black;
+    width: 100%;
+    margin: 0 auto; /* Center the div horizontally */
+}
+
+.sub1, .sub2, .sub3 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.sub1 {
+    background-color: #FFB6C1;
+}
+
+.sub2 {
+    color: white;
+    background-color: #FF0000;
+}
+
+.sub3 {
+    color: black;
+    background-color: rgb(223, 212, 121);
+}
+
+.content {
+    padding: 5px;
+    border: none;
+    background-color: gray;
+    font-family: Helvetica;
+    color: black;
+    margin: 3px;
+    height: 150px;
+    overflow: auto;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto; /* Center the row horizontally */
+}
+
+/* desktop version */
+@media (min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+    .column-md-6 {
+        float: left;
+        width: 50%;
+        margin: 0 auto; /* Center the column horizontally */
+    }
+
+    .column-md-12 {
+        float: left;
+        width: 100%;
+        margin: 0 auto; /* Center the column horizontally */
+    }
+}
+
+/* mobile version */
+@media (max-width: 767px) {
+    .column-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
